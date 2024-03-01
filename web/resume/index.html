@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>金烜宇简历</title>
+        <style>
+            header {
+                display: flex;
+                justify-content: center;
+                margin: 10px auto;
+                border-bottom: dashed;
+            }
+
+            header>table {
+                border-spacing: 3em 1em;
+            }
+
+            aside {
+                position: fixed;
+                left: 20px;
+            }
+
+            nav table {
+                border: solid 2px;
+                border-collapse: collapse;
+            }
+
+            nav th,
+            nav td {
+                font-size: larger;
+                border: solid 2px;
+                padding: 20px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:link,
+            a:visited {
+                color: chocolate;
+            }
+
+            article {
+                margin: auto 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>姓名</th>
+                        <td>金烜宇</td>
+                        <th>年龄</th>
+                        <td>21</td>
+                        <th>性别</th>
+                        <td>男</td>
+                    </tr>
+                    <tr>
+                        <th>手机号</th>
+                        <td>17573413011</td>
+                        <th>邮箱</th>
+                        <td>1027743497@qq.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+        <main>
+            <aside>
+                <nav>
+                    <table>
+                        <tr>
+                            <th>导航栏</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#教育经历">教育经历</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#专业技能">专业技能</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#荣誉奖项">荣誉奖项</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#项目经历">项目经历</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#自我评价">自我评价</a>
+                            </td>
+                        </tr>
+                    </table>
+                </nav>
+            </aside>
+            <article>
+                <h3 id="教育经历">教育经历</h3>
+                <p>
+                    <b>湖南理工学院</b> - 计算机科学与技术 本科 2021年09月 - 2025年06月<br>
+                    GPA：3.5/5.0<br>
+                    主修课程：C 语言、数据结构、计算机组成原理、操作系统、计算机网络、数据库等<br>
+                    曾获评国家励志奖学金、三好学生
+                </p>
+
+                <hr>
+
+                <h3 id="专业技能">专业技能</h3>
+                <ul>
+                    <li>熟悉各种数据结构，包括链表、图、栈、队列、哈希表、平衡树、线段树、字典树等</li>
+                    <li>熟悉多种算法并具备编码实现能力，如排序、搜索、Dp、Dijkstra、kmp等</li>
+                    <li>熟悉Linux环境下常用命令以及相关工具的使用，如gdb、Git、Vim等</li>
+                    <li>熟悉C++与C++1x现代语法：多态，STL，RAII与所有权，智能指针，模板元编程。熟悉Python，
+                        Java等主流语言</li>
+                </ul>
+
+                <hr>
+
+                <h3 id="荣誉奖项">荣誉奖项</h3>
+                <table style="border-spacing: 30px 5px;">
+                    <tbody>
+                        <tr>
+                            <td>ACM-ICPC 国际大学生程序设计竞赛亚洲区域赛 沈阳站银奖，杭州站银奖</td>
+                            <td>2022-11/2023-12</td>
+                        </tr>
+                        <tr>
+                            <td>CCPC中国大学生程序设计竞赛-全国邀请赛（湖南） 银奖</td>
+                            <td>2023-05</td>
+                        </tr>
+                        <tr>
+                            <td>湖南省大学生程序设计竞赛一等奖</td>
+                            <td>2023-04</td>
+                        </tr>
+                        <tr>
+                            <td>Robocom机器人开发者大赛编程技能赛全国总决赛一等奖</td>
+                            <td>2023-08</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3 id="项目经历">项目经历</h3>
+                <div>
+                    <h4>深入理解计算机系统（CSAPP）</h4>
+                    阅读XV6内核源码并修改相关模块添加功能
+                    <ul>
+                        <li>Bomb/Attack Lab：通过gdb阅读汇编代码，获取字符串信息/实现缓冲区溢出攻击</li>
+                        <li>Malloc Lab：实现简易malloc()系统调用，通过sbrk()扩展堆区内存，设计数据结构实现显式分配器</li>
+                        <li>Sh Lab：实现简易Unix Shell，通过信号处理实现作业管理</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>MIT6.S081</h4>
+                    阅读XV6内核源码并修改相关模块添加功能
+                    <ul>
+                        <li>通过添加页表项状态位与中断处理程序，实现写时复制fork()</li>
+                        <li>通过锁与修改管理结构，改善内存分配与文件系统的缓存读写机制，提高并发性</li>
+                        <li>通过设计数据结构维护已分配堆内存，实现简易mmap()系统调用</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>2023 年秋冬季开源操作系统训练营</h4>
+                    学习基于现代系统语言rust和灵活开放的系统结构RISC-V编写操作系统
+                    <ul>
+                        <li>第一阶段：以rustlings闯关方式学习rust基本语法并学习RISC-V架构知识</li>
+                        <li>第二阶段：在基于rust编写的rCoreOS上进行实验，理解操作系统原理与基本实现</li>
+                        <li>第三阶段：学习Rust for Linux驱动模块开发，理解Linux内核结构与驱动编写</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <h3 id="自我评价">自我评价</h3>
+                <ul>
+                    <li>热爱编程，爱钻研思考问题，对计算机科学的底层原理有着浓厚的兴趣和热情</li>
+                    <li>有较好的自我管控力，注重团队配合，抗压能力强</li>
+                </ul>
+            </article>
+        </main>
+
+    </body>
+
+</html>
