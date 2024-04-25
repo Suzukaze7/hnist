@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css"/>
+    <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
+
+    <script type="module" src="/static/index.js"></script>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+
+<body>
+<div id="app">
+    <el-card class="container">
+        <div v-if="!isLogin">
+            <el-row justify="center">
+                <el-col :span="8">
+                    <h2>登录</h2>
+                </el-col>
+            </el-row>
+            <el-form :model="form">
+                <el-form-item label="账号">
+                    <el-input v-model="form.username"/>
+                </el-form-item>
+                <el-form-item label="密码">
+                    <el-input v-model="form.password" type="password"/>
+                </el-form-item>
+
+                <el-row justify="end">
+                    <el-col :span="12">
+                        <el-text type="danger">{{ error }}</el-text>
+                    </el-col>
+                </el-row>
+
+                <el-row justify="center">
+                    <el-col :span="8">
+                        <el-button type="primary" @click="login">登录</el-button>
+                    </el-col>
+                </el-row>
+            </el-form>
+        </div>
+
+        <div v-else>
+            <table>
+                <tr>
+                    <td>欢迎，{{ name }}</td>
+                </tr>
+                <tr>
+                    <td>当前请求数量：</td>
+                    <td>{{ currentRequest }}</td>
+                </tr>
+                <tr>
+                    <td>总访问次数：</td>
+                    <td>{{ totalVisit }}</td>
+                </tr>
+            </table>
+        </div>
+
+    </el-card>
+</div>
+</body>
+
+</html>

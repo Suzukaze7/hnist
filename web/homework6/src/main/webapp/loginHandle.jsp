@@ -1,4 +1,4 @@
-<%@ page import="org.example6.LoginHandle" %>
+<%@ page import="org.example.LoginHandle" %>
 <%@ page import="org.json.JSONObject" %>
 <%@ page contentType="text/plain;charset=UTF-8" %>
 <%
